@@ -1,0 +1,257 @@
+body{
+    background: linear-gradient(140deg,  #4d9559 0%, #38703d 28.53%, #133917 75.52% );
+    background-attachment: fixed;
+   box-sizing: border-box;
+
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 35px;
+    height: 45px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    transition: all 300ms;
+
+}
+
+.logo:hover{
+    transform: scale(1.2);
+    
+}
+ 
+/* LEFT CONTAINER */
+
+.leftContainer{
+    width: 940px; 
+} 
+
+.leftContainer textarea{
+    width: 30vw;
+    height: 200px;
+    background: none;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    color: white;
+    display: block;
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    resize: none;
+    font-family: 'Montserrat', sans-serif;
+    }
+
+    .leftContainer textarea::placeholder{
+        color: white;
+    }
+
+    .leftContainer textarea:focus{
+        outline: none;
+    }
+
+.boton-inicio{
+    padding: 15px 19px;
+    width: 20vw;
+    border-radius: 8px;
+    border: 1px solid white;
+    font-size: 15px;
+    margin: 15px 25px;
+    position: relative;
+    top: 80vh;
+    left: 22%;
+    transition: all ease-in-out 300ms;
+    background-color: rgb(31, 168, 145);
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+
+.boton-inicio:hover{
+    opacity: 0.5;
+    transform: scale(1.1);
+    background-color: rgb(42, 79, 202);
+    color:#fefefe;
+}
+
+
+
+.leftContainer textarea:focus{
+    outline: none;
+}
+
+/* ASIDE */
+
+#aside{
+    position: relative;
+    right: 40px;
+    top: 20px;
+    border-radius: 10px;
+    background-color: #fefefe;
+    box-shadow:0 18px 36px rgba(0, 0, 0, 0.30), 0 14px 11px rgba(0, 0, 0, 0.22) ;
+    height:92vh;
+    width: 27vw;
+}
+.imagen-aside{
+    width: 18vw;
+    position: absolute;
+    top: 38vh;
+    left:4.5vw ;
+    transition: all 300ms;
+    animation: imagen-move 4s linear infinite ;
+}
+
+.quitar{
+    display: none;
+}
+
+@keyframes imagen-move{
+    0%{
+        transform: translateY(15px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(15px);
+    }
+
+}
+.contenido-aside h1 {
+    color: rgb(15, 131, 67);
+    font-size: 25px;
+    position: relative;
+    top: 70px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contenido-aside p {
+    position: relative;
+    top: 100px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.resultado textarea{
+    background: none;
+    outline: none;
+    resize: none;
+    position: relative;
+    top: 30px;
+    left: 36px;    
+   display: none;
+}
+
+#aside button{
+    position: absolute;
+    bottom: 10vh;
+    left: 12vw;
+    background: none;
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 7px;
+    display: none;
+    background-color: #133917;
+    color: white;
+
+}
+
+
+
+ @media screen and (max-width: 420px) {
+
+ 
+    .logo{
+        width: 22px;
+        height: 30px;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+
+    .leftContainer{
+        width:100%; 
+    } 
+    
+    .leftContainer textarea{
+        width: 50vw;
+        height: 200px;
+        background: none;
+        font-size: 20px;
+        font-weight: bold;
+        border: none;
+        color: white;
+        display: block;
+        position: absolute;
+        top: 10%;
+        left: 25%;
+        resize: none;
+        font-family: 'Montserrat', sans-serif;
+        }
+    
+        .leftContainer textarea::placeholder{
+            color: white;
+        }
+    
+        .leftContainer textarea:focus{
+            outline: none;
+        }
+    
+    .boton-inicio{
+        text-align: center;
+        padding: 10px 10px;
+        width: 38vw;
+        border-radius: 8px;
+        border: 1px solid white;
+        font-size: 10px;
+        margin: 12px;
+        position: relative;
+        top: 40vh;
+        left: 6vw;
+        transition: all ease-in-out 300ms;
+        background-color: rgb(31, 168, 145);
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+    
+    }
+    
+     ASIDE 
+
+ #aside{
+    position: absolute;
+    left: 6vw;
+    top: 55vh;
+    border-radius: 10px;
+    background-color: #fefefe;
+    box-shadow:0 18px 36px rgba(0, 0, 0, 0.30), 0 14px 11px rgba(0, 0, 0, 0.22) ;
+    height:40vh;
+    width: 90vw;
+}
+
+.imagen-aside{
+    width: 18vw;
+    position: absolute;
+    top: 25vh;
+    left:35vw ;
+    transition: all 300ms;
+    animation: imagen-move 4s linear infinite ;
+}
+    
+}
+
+
+
+
+
